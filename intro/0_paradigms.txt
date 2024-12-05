@@ -1,0 +1,16 @@
++ Кібернетика (ТАУ - теорія автомат. управління)
++ Кодування (програма як набір інструкцій)
++ GF (Grammar Framework)
+
+Парадигми програмування (кодування)
+- імперативна
+    = процедурна (С++)
+    [Variable, Controls(if, for, ... ), IP(instruction pointer)]
+- функціональна (TCL, J, Haskel, Python)
+    [Tuple, Head/Tail, Lambda(Monads), Layer]
+- декларативна
+    = логічна (Prolog)
+    [Predicate, Backtracking, Clause, Goal, Domain]
+- ООП (Java)
+    = прототипна
+- гібридні/мультипарадигми
