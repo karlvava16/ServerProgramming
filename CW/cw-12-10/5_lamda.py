@@ -1,11 +1,21 @@
 # Функціональні вирази, lambda.
 lam2 = None
+lam3 = None
 y = 100
+w = 1000
 
 def create_lam2() :
     global lam2
     y = 200
     lam2 = lambda x : x + y # захват (замикання) здійснено для локальної змінної у
+
+
+def create_lam3() :
+    global lam3
+    global w
+    global y
+    lam3 = lambda x : x + w
+
 
 def oper( lam ) -> int :
     return lam( 10, 20 )
@@ -19,8 +29,15 @@ def main() :
     ( lambda : print('IIFE') )()
     # CyMicHiCTb lambda Ta def
     print('*', oper( mul ) )
+    create_lam2()
     y = 300
-    print( lam2(0) )
+    print( lam2( 0 ) )
+    print('--------')
+    create_lam3()
+    print(lam3(0))
+    global w
+    w = 2000
+    print(lam3( 0 ) )
 
 
 def mul(x, y):
