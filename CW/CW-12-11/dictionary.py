@@ -15,7 +15,7 @@ def parse_http() -> dict | None :
     return {k: v for k, v in (
         map(str.strip, line.split(':'))
             for line in open("file2.txt", "r", encoding='utf-8')
-            if ':' in line)}
+                if ':' in line)}
 
 
 
