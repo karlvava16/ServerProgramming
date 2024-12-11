@@ -11,23 +11,15 @@ def create_http() :
     except OSError as err :
         print( "Error reading file: ", err )
 
-def parse_http_imp() -> dict | None :
-    d = {}
-    try :
-        with open( "file2.txt", "r", encoding='utf-8' ) as file :
-            for line in file :
-                if ':' in line :
-                    k, v = line.split(':')
-                    d[k] = v
-        return d
-    except OSError as err :
-        print( "Error reading file: ", err )
-        return None
+def parse_http() -> dict | None :
+    return {k: v for k, v in (
+        line.split(':') for line in open("file2.txt", "r", encoding='utf-8')
+        if ':' in line)}
 
 
 def main() :
     #create_http()
-    for k, v in parse_http_imp().items():
+    for k, v in parse_http().items():
         print(k, v)
     print('----------')
     d = {}
