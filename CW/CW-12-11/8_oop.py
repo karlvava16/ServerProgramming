@@ -1,4 +1,6 @@
 # Основи ООП
+import math
+
 
 class Point:
     x = 0                              # оголошення класу
@@ -16,12 +18,24 @@ class Point:
     def __add__(self, other):
         if isinstance(other, Point):
             return Point(self.x + other.x, self.y + other.y)
+        if isinstance(other, int) or isinstance(other, float):
+            return Point(self.x + other, self.y + other)
         else:
             raise TypeError("Can only add points to Point")
 
+    def __mul__(self, other):
+        if isinstance(other, Point):
+            return Point(self.x * other.x, self.y * other.y)
+        elif isinstance(other, int) or isinstance(other, float):
+            return Point(self.x * other, self.y * other)
+        else:
+            raise TypeError("Can only multiply points to Point")
 
-                                       #
-                                       #
+    def magnitude(self):
+        return math.sqrt(self.x ** 2 + self.y ** 2)
+
+
+
 def main():                            #
     p1 = Point(1, 2)             # Створення об'єкту - оператор new не вживається
     print(p1.x, p1.y)                  #
@@ -31,6 +45,10 @@ def main():                            #
     print(p2)
     print(repr(p2))
     print(p1 + p2)
+    print(p1 + 5)
+    print(p1 * p2)
+    print(p1 * 3)
+    print(p1.magnitude())
 
 
 if __name__ == '__main__': main()
