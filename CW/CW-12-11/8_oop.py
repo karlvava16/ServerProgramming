@@ -14,7 +14,10 @@ class Point:
         return "<%s> (%f, %f)" % (__class__.__name__, self.x, self.y)
 
     def __add__(self, other):
-        return Point(self.x + other.x, self.y + other.y)
+        if isinstance(other, Point):
+            return Point(self.x + other.x, self.y + other.y)
+        else:
+            raise TypeError("Can only add points to Point")
 
 
                                        #
