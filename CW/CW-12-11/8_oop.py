@@ -1,5 +1,6 @@
 # Основи ООП
 import math
+import json
 
 
 class Point:
@@ -38,6 +39,15 @@ class Point:
     def stat():
         return "Stat method"
 
+    @staticmethod
+    def from_json(j):
+        if isinstance(j, str):
+            d = json.loads(j)
+            return Point(d["x"], d["y"])
+        elif isinstance(j, dict):
+            return Point(j["x"], j["y"])
+        else:
+            raise TypeError("Point can only be JSON string")
 
 
 def main():                            #
@@ -54,6 +64,8 @@ def main():                            #
     print(p1 * 3)
     print(p1.magnitude())
     print(Point.stat())
+    print(Point.from_json("{\"x\": 4, \"y\": 5}"))
+    print(Point.from_json({"x": 1, "y": 2}))
 
 
 if __name__ == '__main__': main()
