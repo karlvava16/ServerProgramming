@@ -34,6 +34,10 @@ class Point:
     def magnitude(self):
         return math.sqrt(self.x ** 2 + self.y ** 2)
 
+    @staticmethod
+    def stat():
+        return "Stat method"
+
 
 
 def main():                            #
@@ -49,6 +53,7 @@ def main():                            #
     print(p1 * p2)
     print(p1 * 3)
     print(p1.magnitude())
+    print(Point.stat())
 
 
 if __name__ == '__main__': main()
