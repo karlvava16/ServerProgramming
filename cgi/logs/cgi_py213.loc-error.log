@@ -1,0 +1,898 @@
+[Tue Dec 17 10:09:23.710821 2024] [autoindex:error] [pid 14652:tid 1936] [client ::1:52552] AH01276: Cannot serve directory C:/Step/ServerProgramming/cgi/: No matching DirectoryIndex (index.php,index.pl,index.cgi,index.asp,index.shtml,index.html,index.htm,index.py,default.php,default.pl,default.cgi,default.asp,default.shtml,default.html,default.htm,home.php,home.pl,home.cgi,home.asp,home.shtml,home.html,home.htm) found, and server-generated directory index forbidden by Options directive
+[Tue Dec 17 10:09:37.313538 2024] [autoindex:error] [pid 14652:tid 1952] [client ::1:52557] AH01276: Cannot serve directory C:/Step/ServerProgramming/cgi/: No matching DirectoryIndex (index.php,index.pl,index.cgi,index.asp,index.shtml,index.html,index.htm,index.py,default.php,default.pl,default.cgi,default.asp,default.shtml,default.html,default.htm,home.php,home.pl,home.cgi,home.asp,home.shtml,home.html,home.htm) found, and server-generated directory index forbidden by Options directive
+[Tue Dec 17 10:09:38.160818 2024] [autoindex:error] [pid 14652:tid 1952] [client ::1:52558] AH01276: Cannot serve directory C:/Step/ServerProgramming/cgi/: No matching DirectoryIndex (index.php,index.pl,index.cgi,index.asp,index.shtml,index.html,index.htm,index.py,default.php,default.pl,default.cgi,default.asp,default.shtml,default.html,default.htm,home.php,home.pl,home.cgi,home.asp,home.shtml,home.html,home.htm) found, and server-generated directory index forbidden by Options directive
+[Tue Dec 17 10:09:38.356774 2024] [autoindex:error] [pid 14652:tid 1952] [client ::1:52558] AH01276: Cannot serve directory C:/Step/ServerProgramming/cgi/: No matching DirectoryIndex (index.php,index.pl,index.cgi,index.asp,index.shtml,index.html,index.htm,index.py,default.php,default.pl,default.cgi,default.asp,default.shtml,default.html,default.htm,home.php,home.pl,home.cgi,home.asp,home.shtml,home.html,home.htm) found, and server-generated directory index forbidden by Options directive
+[Tue Dec 17 11:03:13.660179 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:13.661184 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:14.935235 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.497124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.497124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.497124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.497124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.497124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.497124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.498124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.498124 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.678375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.678375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.678375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.678375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.679375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.679375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.679375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:15.679375 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54177] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:21.643629 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.091153 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305039 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305039 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305039 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305039 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305545 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305545 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305545 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.305545 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.636119 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.636119 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.636119 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.637126 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.637126 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.637126 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.637126 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:22.637126 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54182] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 193: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:32.641718 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.184792 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.424410 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.424410 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.424410 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.425419 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.425419 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.425419 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.425419 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.425419 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.604439 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.777474 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:33.958550 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.110938 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.284596 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.470631 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.470631 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.470631 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.470631 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:           ~~~~~~^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.471144 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 23, in decode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.471144 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:     return codecs.charmap_decode(input,self.errors,decoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.471144 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:03:34.471144 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54187] AH01215: UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 187: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:19.112219 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.093023 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.093023 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.093023 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.093023 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.093023 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.094599 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.094599 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.094599 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.361196 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.361196 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.361196 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.361196 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.361196 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.361196 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.362209 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.362209 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.576352 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.803652 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.803652 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.803652 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.803652 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.803652 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.803652 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.804658 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.804658 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.977578 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:20.978583 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.202107 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.417043 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.418099 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.609971 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.610488 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.827514 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.827514 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.827514 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.827514 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.827514 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.827514 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.828578 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:21.828578 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044141 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044141 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044141 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044647 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044647 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044647 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044647 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.044647 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.296795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.296795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.296795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.296795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.296795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.297795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.297795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.297795 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.547847 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.777471 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.988060 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:22.989063 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.246848 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.525239 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.526257 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.745733 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.987947 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:23.988953 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.219123 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.461836 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.461836 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.461836 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.462841 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.462841 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.462841 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.462841 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.462841 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.676544 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:24.938058 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54209] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.089399 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.089399 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.089399 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.089399 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.089399 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.089399 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.090473 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.090473 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.561143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.802213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:30.803213 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.011324 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.011324 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.011324 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.011324 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.011324 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.011324 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.012799 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.012799 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.211096 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.424961 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.425968 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.630914 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.828975 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:31.830480 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.047122 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.047122 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.047122 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.047122 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.048346 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.048346 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.048346 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.048346 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.260326 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.260326 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.260326 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.260326 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.261576 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.261576 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.261576 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.261576 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.457354 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.458664 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.667401 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:32.900195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.128300 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.128300 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.128300 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.128300 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.129552 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.129552 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.129552 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.129552 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.342347 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.554940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.555940 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.783984 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.783984 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.783984 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.783984 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.785080 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.785080 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.785080 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.785080 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:33.998164 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211218 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.211722 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.421951 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.422952 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.620243 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.620243 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.621498 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.621498 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.621498 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.621498 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.621498 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.621498 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.846173 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:34.847241 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.065982 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.291214 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.291214 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.291214 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.291214 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.292248 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.292248 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.292248 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.292248 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.517996 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.517996 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.517996 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.517996 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.517996 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.519143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.519143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.519143 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.730903 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:35.962743 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.210876 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.210876 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.210876 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.210876 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.210876 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.211880 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.211880 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.211880 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.418794 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.420298 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.633642 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.634939 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:36.849308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.062441 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291171 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291171 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291171 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291171 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291171 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291171 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291693 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.291693 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:37.981037 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.423804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.423804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.423804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.423804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.423804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.423804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.424810 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.424810 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767006 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:38.767512 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.062804 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.305085 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.306093 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.586134 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.586134 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.586134 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.586134 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.586134 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.586134 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.587496 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.587496 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.863434 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.863434 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.863434 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.863434 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.863434 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.865325 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.865325 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:39.865325 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.077308 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.310074 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.310074 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.311079 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.311079 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.311079 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.311079 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.311079 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.311079 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.765896 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.765896 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.765896 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.766894 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.766894 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.766894 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.766894 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:40.766894 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.029320 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:04:41.642595 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54213] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:33.973672 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54241] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:05:55.841002 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54250] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:12.347999 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54258] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.103080 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.103080 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.104195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.104195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.104195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.104195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.104195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:06:41.104195 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54271] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.878461 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.878461 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.878461 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215:     print(f.read())\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.878461 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215:     ~~~~~^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.878461 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.878461 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.879681 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:16.879681 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54286] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.038003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.038003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.038003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.038003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.038003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.039003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.039003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:07:58.039003 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.417539 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.417539 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.417539 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.417539 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.418626 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.418626 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.418626 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.418626 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.631167 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:01.632671 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54302] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.627835 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.627835 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.627835 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.627835 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.627835 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.627835 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.628842 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:08:42.628842 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54322] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:09:06.684735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54332] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 168-170: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.147302 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 6, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:10:10.148303 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54358] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 170-178: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.202451 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:33.203455 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54396] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.976753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.977753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.977753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.977753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:11:55.977753 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54407] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278466 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:17.278977 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54421] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802459 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:25.802970 2024] [cgi:error] [pid 14652:tid 1936] [client ::1:54422] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.747727 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.748735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.748735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:12:40.748735 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54430] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785116 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785621 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:04.785621 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54515] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.719522 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.719522 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 7, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.719522 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     print('''\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.719522 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     ~~~~~^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     <!DOCTYPE html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     ^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     ...<11 lines>...\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     </html>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     ^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     ''')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     ^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:14:15.720032 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:54527] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 172-180: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:25:38.895361 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55182] AH02811: script not found or unable to stat: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:25:57.426786 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55196] AH02811: script not found or unable to stat: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:25:59.260128 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55196] AH02811: script not found or unable to stat: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:27:05.808015 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55301] couldn't create child process: 720002: api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:27:05.808015 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55301] AH01223: couldn't spawn child process: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:27:25.596344 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55320] couldn't create child process: 720002: api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:27:25.596344 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55320] AH01223: couldn't spawn child process: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:29:16.452354 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55417] couldn't create child process: 720002: api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:29:16.452354 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55417] AH01223: couldn't spawn child process: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:29:19.705650 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55425] couldn't create child process: 720002: api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:29:19.705650 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55425] AH01223: couldn't spawn child process: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:30:35.936086 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55486] couldn't create child process: 720002: api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:30:35.936086 2024] [cgi:error] [pid 14652:tid 1952] (OS 2)The system cannot find the file specified.  : [client ::1:55486] AH01223: couldn't spawn child process: C:/Step/ServerProgramming/cgi/api1.py, referer: http://cgi213.loc/
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215: Traceback (most recent call last):\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215:   File "C:\\Step\\ServerProgramming\\cgi\\index.py", line 8, in <module>\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215:     print(f.read(), end='')\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215:     ~~~~~^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215:   File "C:\\Python313\\Lib\\encodings\\cp1252.py", line 19, in encode\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.655479 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r: C:/Step/ServerProgramming/cgi/index.py
+[Tue Dec 17 11:31:30.656473 2024] [cgi:error] [pid 14652:tid 1952] [client ::1:55531] AH01215: UnicodeEncodeError: 'charmap' codec can't encode characters in position 168-176: character maps to <undefined>\r: C:/Step/ServerProgramming/cgi/index.py
