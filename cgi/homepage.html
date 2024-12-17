@@ -13,6 +13,23 @@
 
     <p id="out"></p>
 
+    <form>
+        <h2>Реєстрація нового користувача</h2>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" ><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" ><br><br>
+
+        <label for="confirm_password">Підтвердіть пароль:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" ><br><br>
+
+        <button type="submit">Зареєструватися</button>
+    </form>
+
     <script>
     function api1() {
         fetch("/api1")
