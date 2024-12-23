@@ -4,16 +4,17 @@
 # Запити, що не проходять через нього не повинні обслуговуватися
 
 import codecs
-import json
 import sys
 
-from unicodedata import category
+from am_data import AmData
+
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 sys.stdin = codecs.getreader("utf-8")(sys.stdin.detach())
 
 def send_error(code=400, phrase="Bad Request", explain=None):
     print(f"Status: {code} {phrase}")
+    print("Access-Control-Allow-Origin: *")
     print("Content-Type: text/plain; charset=utf-8")
     print()
     print(explain if explain else phrase)
@@ -58,16 +59,10 @@ sys.path.append('./')
 import importlib
 
 try :
-    controller_module = importlib.import_module( f'controllers.{controller}.{controller_name}')
-    controller_class = getattr(controller_module, controller_name)
+    controller_module = importlib. import_module( f'controllers.{controller}.{controller_name}')
+    controller_class = getattr( controller_module, controller_name )
     controller_object = controller_class()
-    controller_action = getattr(controller_object, "serve")
-    controller_action({
-        'envs': envs,
-        'path': path,
-        'controller': controller,
-        'category' : category,
-        'slug': slug
-    })
+    controller_action = getattr( controller_object, "serve" )
+    controller_action(AmData(envs, path, controller,category, slug) )
 except Exception as err :
-    send_error(explain=err)
+    send_error( explain=err )

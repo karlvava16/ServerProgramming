@@ -29,9 +29,6 @@ class RestStatus :
             'isSuccess': self.isSuccess
         }
 
-
-
-
     def phrase_by_code(self, status_code: int) -> str:
         match status_code:
             case 200: return "OK"
@@ -42,6 +39,7 @@ class RestStatus :
             case 404: return "Not Found"
             case 405: return "Method Not Allowed"
             case 415: return "Unsupported Media Type"
+            case 422: return "Unprocessable Entity"
             case 500: return "Internal Server Error"
             case _: return "Unknown Error"
 
