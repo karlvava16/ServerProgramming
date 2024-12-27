@@ -8,6 +8,8 @@ import sys
 
 from am_data import AmData
 
+import importlib
+
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 sys.stdin = codecs.getreader("utf-8")(sys.stdin.detach())

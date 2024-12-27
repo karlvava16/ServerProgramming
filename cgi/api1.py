@@ -1,4 +1,4 @@
-#!C:/Python313/python.exe
+# !C:/Python313/python.exe
 import codecs
 import json
 import os
@@ -8,25 +8,28 @@ import urllib.parse
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 sys.stdin = codecs.getreader("utf-8")(sys.stdin.detach())
 
+
 def send_error(code=400, phrase="Bad Request", explain=None):
     print(f"Status: {code} {phrase}")
+    print("Access-Control-Allow-Origin: *")
     print("Content-Type: text/plain; charset=utf-8")
     print()
     print(explain if explain else phrase)
     exit()
 
+
 def parse_multipart_form_data(body, content_type):
     """Parses multipart/form-data."""
     boundary = "--" + content_type.split("boundary=")[1]
     parts = body.split(boundary)
-    parts = parts[1:-1]  # Remove preamble and epilogue
+    parts = parts[1:-1]
     parsed_data = {}
 
     for part in parts:
         if not part.strip():
             continue
         headers, content = part.split("\r\n\r\n", maxsplit=1)
-        content = content.rstrip("\r\n")  # Remove trailing newlines
+        content = content.rstrip("\r\n")
 
         # Parse headers
         headers_dict = {}
@@ -35,15 +38,15 @@ def parse_multipart_form_data(body, content_type):
                 key, value = header_line.split(": ", maxsplit=1)
                 headers_dict[key.lower()] = value
 
-        # Extract the field name from Content-Disposition
+        # Extract field name from Content-Disposition
         disposition = headers_dict.get("content-disposition", "")
         if "name=" in disposition:
-            field_name = disposition.split("name=")[1].split(";")[0].strip('"')
+            field_name = disposition.split('name="')[1].split('"')[0]
             parsed_data[field_name] = content
 
     return parsed_data
 
-# Get environment variables
+
 envs = {
     k: v for k, v in os.environ.items()
     if k in ('REQUEST_METHOD', 'QUERY_STRING', 'REQUEST_URI')
@@ -54,44 +57,46 @@ headers = {
     if k.startswith('HTTP_') or k in ('CONTENT_TYPE', 'CONTENT_LENGTH')
 }
 
-# Parse query parameters
 query_string = urllib.parse.unquote(envs['QUERY_STRING'], encoding="utf-8")
 query_parameters = dict(
     pair.split('=', maxsplit=1) if '=' in pair else (pair, None)
     for pair in query_string.split('&') if pair
 )
 
-# Parse body parameters
 body_parameters = {}
 body = sys.stdin.read()
 if body:
-    if headers.get('content-type') == 'application/json':
-        body_parameters = json.loads(body)
-    elif headers.get('content-type') == 'application/x-www-form-urlencoded':
+    content_type = headers.get('content-type', '')
+    if content_type == 'application/json':
+        try:
+            body_parameters = json.loads(body)
+        except json.JSONDecodeError:
+            send_error(400, "Bad Request", "Invalid JSON format")
+    elif content_type == 'application/x-www-form-urlencoded':
         body_parameters = dict(
             pair.split('=', maxsplit=1)
             for pair in urllib.parse.unquote(body).split('&') if '=' in pair
         )
-    elif headers.get('content-type', '').startswith('multipart/form-data'):
-        body_parameters = parse_multipart_form_data(body, headers['content-type'])
+    elif content_type.startswith('multipart/form-data'):
+        body_parameters = parse_multipart_form_data(body, content_type)
     else:
-        send_error(415, "Unsupported Media Type", "Supported types: application/json, application/x-www-form-urlencoded, multipart/form-data")
+        send_error(415, "Unsupported Media Type",
+                   "Supported types: application/json, application/x-www-form-urlencoded, multipart/form-data")
 
-# Get the request path
 path = envs['REQUEST_URI']
 if '?' in path:
     path = path[:path.index('?')]
 
-# Prepare the response data
 response_data = {
     "status": 200,
     "method": envs['REQUEST_METHOD'],
+    "path": path,
     "query_parameters": query_parameters,
     "headers": headers,
     "body_parameters": body_parameters,
 }
 
-# Send the response
 print("Content-Type: application/json; charset=utf-8")
+print("Access-Control-Allow-Origin: *")
 print()
 print(json.dumps(response_data, ensure_ascii=False, indent=2))
