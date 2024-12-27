@@ -1,0 +1,792 @@
+File: C:\Step\ServerProgramming\cgi\.htaccess
+Content:
+RewriteEngine on
+RewriteRule  .*  access_manager.py  [END,QSA]
+
+File: C:\Step\ServerProgramming\cgi\access_manager.py
+Content:
+#!C:/Python313/python.exe
+
+# Диспетчер доступу - модуль програми, через який проходять усі запити.
+# Запити, що не проходять через нього не повинні обслуговуватися
+
+import codecs
+import sys
+
+from am_data import AmData
+
+import importlib
+
+
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+sys.stdin = codecs.getreader("utf-8")(sys.stdin.detach())
+
+def send_error(code=400, phrase="Bad Request", explain=None):
+    print(f"Status: {code} {phrase}")
+    print("Access-Control-Allow-Origin: *")
+    print("Content-Type: text/plain; charset=utf-8")
+    print()
+    print(explain if explain else phrase)
+    exit()
+
+def send_file( filename:str ) :
+    print( "Content-Type: text/html; charset=utf-8" )
+    print()
+    with open( filename, encoding="utf-8" ) as file :
+        print( file.read() )
+    exit()
+
+def ucfirst( input:str ) :
+    if len( input ) == 0 : return input
+    if len( input ) == 1 : return input[0].upper()
+    return input[0].upper() + input[1:].lower()
+
+import os
+envs = {
+    k: v for k, v in os.environ.items()
+    if k in ('REQUEST_METHOD', 'QUERY_STRING', 'REQUEST_URI')
+}
+path = envs['REQUEST_URI']
+if '?' in path:
+    path = path[:path.index('?')]
+if path.startswith( '/' ) :
+    path = path[1:]
+
+# Аналізувати path, здійснюємо маршрутизацію
+if path == '':
+    send_file("homepage.html")
+
+# Розділяємо запит на Controller/Action/Slug?
+parts = path.split('/', maxsplit=2)
+controller = parts[0]
+category = parts[1] if len(parts) > 1 and len(parts[1]) > 0 else 'base'
+slug = parts[2] if len(parts) > 2 else None
+
+controller_name = ucfirst(controller) + ucfirst(category) + "Controller"
+
+sys.path.append('./')
+import importlib
+
+try :
+    controller_module = importlib. import_module( f'controllers.{controller}.{controller_name}')
+    controller_class = getattr( controller_module, controller_name )
+    controller_object = controller_class()
+    controller_action = getattr( controller_object, "serve" )
+    controller_action(AmData(envs, path, controller,category, slug) )
+except Exception as err :
+    send_error( explain=err )
+
+
+File: C:\Step\ServerProgramming\cgi\am_data.py
+Content:
+from data.db_context import DbContext
+
+
+class AmData:
+    def __init__(self, envs, path, controller, category, slug):
+        self.db_context = DbContext()
+        self.envs = envs
+        self.path = path
+        self.controller = controller
+        self.category = category
+        self.slug = slug
+        # Parse query parameters
+        self.query_params = self._parse_query_string(envs.get('QUERY_STRING', ''))
+
+    def _parse_query_string(self, query_string):
+        """Parse query string into dictionary of parameters"""
+        if not query_string:
+            return {}
+
+        params = {}
+        pairs = query_string.split('&')
+        for pair in pairs:
+            if not pair:
+                continue
+            if '=' in pair:
+                key, value = pair.split('=', 1)
+                params[key] = value
+            else:
+                params[pair] = None
+        return params
+
+
+# Example UserBaseController.py implementation
+from models.RestModel import RestModel, RestMeta
+
+
+class UserBaseController:
+    def serve(self, am_data: AmData):
+        # Create meta information
+        meta = {
+            "service": "Server Application",
+            "group": "KN-P-213",
+            "ctr": self.__class__.__name__,
+            "method": am_data.envs.get('REQUEST_METHOD', 'GET'),
+            "params": am_data.query_params  # Add query parameters to meta
+        }
+
+        # Create response
+        response = RestModel(
+            status=200,
+            meta=meta,
+            data={"user": "works"}
+        )
+
+        # Output response
+        print("Content-Type: application/json")
+        print()
+        print(json.dumps(response.to_json(), ensure_ascii=False))
+
+File: C:\Step\ServerProgramming\cgi\api1.py
+Content:
+# !C:/Python313/python.exe
+import codecs
+import json
+import os
+import sys
+import urllib.parse
+
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+sys.stdin = codecs.getreader("utf-8")(sys.stdin.detach())
+
+
+def send_error(code=400, phrase="Bad Request", explain=None):
+    print(f"Status: {code} {phrase}")
+    print("Access-Control-Allow-Origin: *")
+    print("Content-Type: text/plain; charset=utf-8")
+    print()
+    print(explain if explain else phrase)
+    exit()
+
+
+def parse_multipart_form_data(body, content_type):
+    """Parses multipart/form-data."""
+    boundary = "--" + content_type.split("boundary=")[1]
+    parts = body.split(boundary)
+    parts = parts[1:-1]
+    parsed_data = {}
+
+    for part in parts:
+        if not part.strip():
+            continue
+        headers, content = part.split("\r\n\r\n", maxsplit=1)
+        content = content.rstrip("\r\n")
+
+        # Parse headers
+        headers_dict = {}
+        for header_line in headers.split("\r\n"):
+            if ": " in header_line:
+                key, value = header_line.split(": ", maxsplit=1)
+                headers_dict[key.lower()] = value
+
+        # Extract field name from Content-Disposition
+        disposition = headers_dict.get("content-disposition", "")
+        if "name=" in disposition:
+            field_name = disposition.split('name="')[1].split('"')[0]
+            parsed_data[field_name] = content
+
+    return parsed_data
+
+
+envs = {
+    k: v for k, v in os.environ.items()
+    if k in ('REQUEST_METHOD', 'QUERY_STRING', 'REQUEST_URI')
+}
+headers = {
+    (k[5:] if k.startswith('HTTP_') else k).lower().replace("_", "-"): v
+    for k, v in os.environ.items()
+    if k.startswith('HTTP_') or k in ('CONTENT_TYPE', 'CONTENT_LENGTH')
+}
+
+query_string = urllib.parse.unquote(envs['QUERY_STRING'], encoding="utf-8")
+query_parameters = dict(
+    pair.split('=', maxsplit=1) if '=' in pair else (pair, None)
+    for pair in query_string.split('&') if pair
+)
+
+body_parameters = {}
+body = sys.stdin.read()
+if body:
+    content_type = headers.get('content-type', '')
+    if content_type == 'application/json':
+        try:
+            body_parameters = json.loads(body)
+        except json.JSONDecodeError:
+            send_error(400, "Bad Request", "Invalid JSON format")
+    elif content_type == 'application/x-www-form-urlencoded':
+        body_parameters = dict(
+            pair.split('=', maxsplit=1)
+            for pair in urllib.parse.unquote(body).split('&') if '=' in pair
+        )
+    elif content_type.startswith('multipart/form-data'):
+        body_parameters = parse_multipart_form_data(body, content_type)
+    else:
+        send_error(415, "Unsupported Media Type",
+                   "Supported types: application/json, application/x-www-form-urlencoded, multipart/form-data")
+
+path = envs['REQUEST_URI']
+if '?' in path:
+    path = path[:path.index('?')]
+
+response_data = {
+    "status": 200,
+    "method": envs['REQUEST_METHOD'],
+    "path": path,
+    "query_parameters": query_parameters,
+    "headers": headers,
+    "body_parameters": body_parameters,
+}
+
+print("Content-Type: application/json; charset=utf-8")
+print("Access-Control-Allow-Origin: *")
+print()
+print(json.dumps(response_data, ensure_ascii=False, indent=2))
+
+File: C:\Step\ServerProgramming\cgi\homepage.html
+Content:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>home page</h1>
+    <p>CGI - Common Gateway Interface - Інтерфейс спільного шлюзу -
+    набір вимог дл веб-сервера щодо підтримки правил запуску
+    сторонніх скриптів</p>
+    <button onclick="api1()">API-1</button>
+
+    <p id="out"></p>
+
+     <form id="reg-form">
+        <h2>Реєстрація нового користувача</h2>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" ><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" ><br><br>
+
+        <label for="confirm_password">Підтвердіть пароль:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" ><br><br>
+
+        <button type="submit">Зареєструватися</button>
+    </form>
+
+
+     <h1>CGI Testing</h1>
+    <button onclick="sendUnsupported()">Send Unsupported Type</button>
+    <button onclick="sendMultipart()">Send multipart/form-data</button>
+    <p id="output"></p>
+    <script>
+        document.addEventListener('submit', e => {
+            const form = e.target;
+            if(form.id == "reg-form") {
+                e.preventDefault();
+                fetch("/api/reg", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: // new FormData(form) // -- multipart
+                        new URLSearchParams(new FormData(form)).toString()
+                }).then(r => r.text())
+                .then(t => out.innerHTML = t);
+            }
+        });
+
+       function sendUnsupported() {
+            fetch("/cgi-bin/api", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/html"
+                },
+                body: "<p>This is not supported</p>"
+            })
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById("output").textContent = text;
+            })
+            .catch(error => console.error(error));
+        }
+
+        function sendMultipart() {
+            const formData = new FormData();
+            formData.append("field1", "value1");
+            formData.append("field2", "value2");
+
+            fetch("/cgi-bin/api1.py", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "multipart/form-data; boundary=----Boundary",
+                },
+                body: formData
+            })
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById("output").textContent = text;
+            })
+            .catch(error => console.error(error));
+        }
+
+        function api1() {
+            fetch("/api2?x=10&b=true&name=Єґор&&json")
+            .then(r => r.text())
+            .then(t => out.innerHTML = t);
+        }
+        function api1p() {
+            fetch("/api/b", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Content-Length': 0,
+                    'My-Header': 'My Value'
+                },
+                body: JSON.stringify({
+                    "name": "Єґор",
+                    "surname": "Їваніч"
+                })
+            })
+            .then(r => r.text())
+            .then(t => out.innerHTML = t);
+        }
+    </script>
+</body>
+</html>
+
+File: C:\Step\ServerProgramming\cgi\index.html
+Content:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGI-213</title>
+</head>
+<body>
+<h1>Несанкціонований запит</h1>
+</body>
+</html>
+
+
+File: C:\Step\ServerProgramming\cgi\test.html
+Content:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CGI Request Tester</title>
+    <style>
+        .output-container {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .button-group {
+            margin: 10px 0;
+        }
+        button {
+            margin: 0 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CGI Request Tester</h1>
+
+    <div class="button-group">
+        <button onclick="sendJsonRequest()">Send JSON</button>
+        <button onclick="sendFormUrlEncoded()">Send Form URL-encoded</button>
+        <button onclick="sendMultipart()">Send Multipart Form-data</button>
+        <button onclick="sendUnsupportedType()">Send Unsupported Type</button>
+    </div>
+
+    <div class="output-container">
+        <h3>Response:</h3>
+        <pre id="output"></pre>
+    </div>
+
+    <script>
+        function displayResponse(response, responseText) {
+            const output = document.getElementById('output');
+            try {
+                const jsonResponse = JSON.parse(responseText);
+                output.textContent = JSON.stringify(jsonResponse, null, 2);
+            } catch (e) {
+                output.textContent = responseText;
+            }
+        }
+
+        async function sendRequest(options) {
+            try {
+                const response = await fetch("http://cgi213.loc/user/", options);
+                const text = await response.text();
+                displayResponse(response, text);
+            } catch (error) {
+                document.getElementById('output').textContent = 'Error: ' + error.message;
+            }
+        }
+
+        function sendJsonRequest() {
+            sendRequest({
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: 'John',
+                    age: 30,
+                    city: 'New York'
+                })
+            });
+        }
+
+        function sendFormUrlEncoded() {
+            sendRequest({
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'name=John&age=30&city=New York'
+            });
+        }
+
+        function sendMultipart() {
+            const formData = new FormData();
+            formData.append('name', 'John');
+            formData.append('age', '30');
+            formData.append('city', 'New York');
+
+            sendRequest({
+                method: 'POST',
+                body: formData
+            });
+        }
+
+        function sendUnsupportedType() {
+            sendRequest({
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'text/html'
+                },
+                body: '<p>This is unsupported content</p>'
+            });
+        }
+
+
+
+    </script>
+</body>
+</html>
+
+File: C:\Step\ServerProgramming\cgi\controllers\ApiController.py
+Content:
+import json
+
+from models.RestModel import *
+from am_data import AmData
+
+class ApiController:
+    def __init__(self):
+        self.response = RestModel()
+        self.response.meta = RestMeta({
+            'service': 'Server Application',
+            'group': 'KN-P-213',
+        })
+
+    def end_with(self, status_code: int = 200, data: any = None):
+        if status_code != 200:
+            self.response.status = RestStatus(status_code)
+        print("Status: %d %s" % (status_code, self.response.status.reasonPhrase))
+        self.response.data = data
+        print("Access-Control-Allow-Origin: *")
+        print("Access-Control-Allow-Headers: content-type")
+        print("Content-Type: text/plain; charset=utf-8")
+        print()
+        print(json.dumps(self.response, default=vars))
+        exit()
+
+    def serve(self, am_data: AmData):
+        self.am_data = am_data
+        method = am_data.envs["REQUEST_METHOD"]
+        self.response.meta.add('method', method)
+        action_name = f"do_{method.lower()}"
+        controller_action = getattr(self, action_name, None)
+        if controller_action == None:
+            self.end_with(405, f"Method '{am_data.envs["REQUEST_METHOD"]}' not supported")
+        else:
+            self.end_with(data=controller_action())
+
+    def do_options(self):
+        '''CORS/CORP - info about supported items'''
+        print("Access-Control-Allow-Origin: *")
+        print("Access-Control-Allow-Methods: GET, POST, PUT, DELETE")
+        print("Access-Control-Allow-Headers: content-type")
+        print()
+        exit()
+
+
+
+File: C:\Step\ServerProgramming\cgi\controllers\user\UserAuthController.py
+Content:
+
+from controllers.ApiController import ApiController
+
+class UserAuthController(ApiController) :
+    pass
+
+
+File: C:\Step\ServerProgramming\cgi\controllers\user\UserBaseController.py
+Content:
+import json
+import sys
+from data.user_dao import User
+
+from controllers.ApiController import ApiController
+
+
+class UserBaseController(ApiController):
+
+    def __init__(self):
+        super().__init__()
+        self.response.meta.add('ctr', 'UserBaseController')
+
+    def do_get(self):
+        return {'user' : 'works'}
+
+    def do_post(self):
+        db_context = self.am_data.db_context
+        user_dao = db_context.user_dao
+        body = sys.stdin.read()
+        if len(body) < 3:
+            self.end_with(400, "Body must not be empty")
+
+        try:
+            j = json.loads(body)
+        except ValueError:
+            self.end_with(400, "Invalid JSON")
+
+        try:
+            user = User(
+                name=j['user-name'],
+                email=j['user-email'],
+                password=j['user-password']
+            )
+        except ValueError:
+            self.end_with(422, "Body must have props: 'user-name', 'user-email', 'user-password'" )
+
+        if not user_dao.is_login_free(user.email):
+            self.end_with(422, " 'user-email' in use")
+
+        user_dao.add_user(user)
+
+        return "User Created"
+
+File: C:\Step\ServerProgramming\cgi\data\db.py
+Content:
+import json
+import mysql
+import mysql.connector
+import data.db_config
+
+
+class Db:
+    def __init__(self,):
+        self.__connection = None
+
+    def get_connection(self):
+        if self.__connection is None:
+            self.__connection = mysql.connector.connect(**data.db_config.mysql_connection_data)
+        return self.__connection
+
+
+File: C:\Step\ServerProgramming\cgi\data\db_config.py
+Content:
+mysql_connection_data = {
+    'host': 'localhost',
+    'port': 3308,
+    'user': 'py213_user',
+    'password': 'py213_pass',
+    'database': 'py_knp_213',
+    'charset': 'utf8mb4',
+    'collation': 'utf8mb4_unicode_ci',
+    'use_unicode': True,
+}
+
+File: C:\Step\ServerProgramming\cgi\data\db_context.py
+Content:
+from data.db import Db
+import data.user_dao
+
+
+class DbContext:
+    def __init__(self):
+        self.db = Db()
+        self.user_dao = data.user_dao.UserDao(self.db)
+
+    def test_connection(self):
+        return self.db.get_connection() is not None
+
+
+File: C:\Step\ServerProgramming\cgi\data\user_dao.py
+Content:
+import hashlib
+import uuid
+
+import mysql.connector
+
+from data.db import Db
+
+
+class User:
+    def __init__(self, name: str, email: str, password:str, login:str=None ):
+        self.name = name
+        self.email = email
+        self.password = password
+        self.login = login if login is not None else email
+
+
+
+class UserDao:
+    def __init__(self, db: Db):
+        self.__db = db
+
+    def create_tables(self):
+        connection = self.__db.get_connection()
+        sql = """CREATE TABLE users (
+        `user_id` CHAR(36) PRIMARY KEY DEFAULT( UUID()),
+        `user_name` VARCHAR(128) NOT NULL,
+        `user_email` VARCHAR(256) NOT NULL
+        ) ENGINE = InnoDB, DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
+        """
+        connection.cursor().execute(sql)
+
+        sql = """CREATE TABLE user_access (
+                `ua_id` CHAR(36) PRIMARY KEY DEFAULT( UUID()),
+                `user_id` CHAR(36) NOT NULL,
+                `ua_login` VARCHAR(256) NOT NULL,
+                `ua_hash` VARCHAR(32) NOT NULL,
+                `ua_salt` VARCHAR(16) NOT NULL
+                ) ENGINE = InnoDB, DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
+                """
+        connection.cursor().execute(sql)
+        connection.commit()
+
+    def is_login_free(self, login: str) -> bool:
+        conn = self.__db.get_connection()
+        sql = "SELECT COUNT(*) FROM users_access ua WHERE ua.ua_login = %s"
+        with conn.cursor() as cursor:
+            cursor.execute(sql, tuple(login))
+            row = cursor.fetchone()
+        conn.commit()
+        return row[0] == 0
+
+
+    def add_user(self, user: User):
+        conn = self.__db.get_connection()
+        salt = hashlib.md5(user.password.encode()).hexdigest()[:16]
+        password_hash = hashlib.md5(user.password.encode()).hexdigest()
+
+        try:
+            sql = "SELECT COUNT(*) FROM user_access WHERE ua_login = %s"
+            with conn.cursor() as cursor:
+                cursor.execute(sql, (user.login,))
+                count = cursor.fetchone()[0]
+
+            if count > 0:
+                raise ValueError(f"Login '{user.login}' is already in use.")
+
+            user_id = str(uuid.uuid4())
+
+            sql = "INSERT INTO users (`user_id`, `user_name`, `user_email`) VALUES (%s, %s, %s)"
+            with conn.cursor() as cursor:
+                cursor.execute(sql, (user_id, user.name, user.email))
+
+            sql = "INSERT INTO user_access (`user_id`, `ua_login`, `ua_hash`, `ua_salt`) VALUES (%s, %s, %s, %s)"
+            with conn.cursor() as cursor:
+                cursor.execute(sql, (user_id, user.login, password_hash, salt))
+
+            conn.commit()
+
+        except mysql.connector.Error as err:
+            conn.rollback()  # Rollback in case of database errors
+            raise err
+
+
+File: C:\Step\ServerProgramming\cgi\models\RestModel.py
+Content:
+class RestModel:
+    def __init__(self, status=200, meta={}, data:any = None):
+        self.status = status if isinstance(status, RestStatus) else RestStatus(status)
+        self.meta = meta if isinstance(meta, RestMeta) else RestMeta(meta)
+        self.data = data
+
+    def to_json(self):
+        return {
+            "status": self.status.to_json(),
+            "meta": self.meta.to_json(),
+            "data": self.data
+        }
+
+class RestStatus:
+    def __init__(self,
+            status_code: int,
+            reason_phrase: str=None,
+            is_success: bool | None=None):
+        self.statusCode = status_code
+        self.reasonPhrase = reason_phrase if reason_phrase is not None else self.phrase_by_code(status_code)
+        self.isSuccess = is_success if is_success is not None else status_code < 400
+
+    def to_json(self):
+        return {
+            'statusCode': self.statusCode,
+            'reasonPhrase': self.reasonPhrase,
+            'isSuccess': self.isSuccess
+        }
+
+    def phrase_by_code(self, status_code: int) -> str:
+        match status_code:
+            case 200: return "OK"
+            case 201: return "Created"
+            case 202: return "Accepted"
+            case 400: return "Bad Request"
+            case 403: return "Forbidden"
+            case 404: return "Not Found"
+            case 405: return "Method Not Allowed"
+            case 415: return "Unsupported Media Type"
+            case 422: return "Unprocessable Entity"
+            case 500: return "Internal Server Error"
+            case _: return "Unknown Error"
+
+class RestMeta:
+    def __init__(self, meta=None):
+        if meta is None:
+            meta = {}
+        self.meta = meta
+        # Ensure params exists in meta
+        if 'params' not in self.meta:
+            self.meta['params'] = {}
+
+    def to_json(self):
+        return self.meta
+
+    def add(self, k, v):
+        self.meta[k] = v
+
+    def add_param(self, k, v):
+        """Add a query parameter to the params section"""
+        if 'params' not in self.meta:
+            self.meta['params'] = {}
+        self.meta['params'][k] = v
+
+
+
